@@ -6,13 +6,29 @@ echo "╔══╣ Install: Turtlebot2 for ROS Noetic (STARTING) ╠══╗"
 
 # Install dependencies
 sudo apt-get update
+
+sudo apt-get install -y \
+    software-properties-common
+
+sudo add-apt-repository -y \
+    ppa:ubuntuhandbook1/ppa
+
 sudo apt install -y \
     git \
+    libqt4-dev \
     pyqt5-dev-tools \
+    lib
     libavahi-client-dev \
     libavahi-common-dev \
+    libusb-dev \
+    libftdi-dev \
     mongodb \
-    mongodb-dev
+    mongodb-dev \
+    python3-pip
+
+
+python3 -m pip install -U \
+    pip
 
 python3 -m pip install \
     pymongo \
@@ -33,6 +49,7 @@ git clone https://github.com/TeamSOBITS/turtlebot_simulator.git
 # - Kobuki-related
 git clone https://github.com/TeamSOBITS/kobuki.git
 git clone https://github.com/TeamSOBITS/kobuki_desktop.git
+git clone https://github.com/yujinrobot/kobuki_core
 git clone https://github.com/TeamSOBITS/kobuki_msgs.git
 
 # - Others
@@ -68,7 +85,7 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-common-msgs \
     ros-${ROS_DISTRO}-depthimage-to-laserscan \
     ros-${ROS_DISTRO}-sensor-msgs \
-    ros-${ROS_DISTRO}-ecl-core \
+    ros-${ROS_DISTRO}-ecl-* \
     ros-${ROS_DISTRO}-geometry2 \
     ros-${ROS_DISTRO}-geometry-msgs \
     ros-${ROS_DISTRO}-linux-peripheral-interfaces \
@@ -81,7 +98,25 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-std-msgs \
     ros-${ROS_DISTRO}-unique-identifier \
     ros-${ROS_DISTRO}-warehouse-ros \
-    ros-${ROS_DISTRO}-capabilities 
+    ros-${ROS_DISTRO}-capabilities \
+    ros-${ROS_DISTRO}-urdf \
+    ros-${ROS_DISTRO}-roslint \
+    ros-${ROS_DISTRO}-rqt-robot-dashboard \
+    ros-${ROS_DISTRO}-kdl-conversions \
+    ros-${ROS_DISTRO}-libusb \
+    ros-${ROS_DISTRO}-cv-bridge \
+    ros-${ROS_DISTRO}-pcl-* \
+    ros-${ROS_DISTRO}-gazebo-ros \
+    ros-${ROS_DISTRO}-gazebo-plugins \
+    ros-${ROS_DISTRO}-resource-retriever \
+    ros-${ROS_DISTRO}-qt-* \
+    ros-${ROS_DISTRO}-interactive-markers \
+    ros-${ROS_DISTRO}-depth-image-proc \
+    ros-${ROS_DISTRO}-joy \
+    ros-${ROS_DISTRO}-xacro \
+    ros-${ROS_DISTRO}-rqt* \
+    ros-${ROS_DISTRO}-robot-state-publisher
+
     
 
 echo "╚══╣ Install: Turtlebot2 for ROS Noetic (FINISHED) ╠══╝"
