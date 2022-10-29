@@ -38,22 +38,30 @@ git clone https://github.com/TeamSOBITS/kobuki_msgs.git
 # - Others
 git clone https://github.com/TeamSOBITS/yocs_msgs
 git clone https://github.com/TeamSOBITS/yujin_ocs.git
+
 git clone https://github.com/TeamSOBITS/ar_track_alvar
+
+git clone https://github.com/TeamSOBITS/capabilities
+git clone https://github.com/osrf/std_capabilities
+
 git clone https://github.com/TeamSOBITS/stdr_simulator
+
 git clone https://github.com/GT-RAIL/robot_pose_publisher
+
 # git clone -b noetic-devel https://github.com/ros-planning/warehouse_ros_mongo
 # git clone https://github.com/ros-planning/warehouse_ros
-git clone https://github.com/TeamSOBITS/world_canvas
-git clone https://github.com/TeamSOBITS/world_canvas_libs
-git clone https://github.com/TeamSOBITS/world_canvas_msgs
+
 git clone https://github.com/TeamSOBITS/rocon_app_platform
 git clone https://github.com/TeamSOBITS/rocon_msgs
 git clone https://github.com/TeamSOBITS/rocon_multimaster
 git clone https://github.com/TeamSOBITS/rocon_tools
+
+git clone https://github.com/TeamSOBITS/world_canvas
+git clone https://github.com/TeamSOBITS/world_canvas_libs
+git clone https://github.com/TeamSOBITS/world_canvas_msgs
+
 git clone https://github.com/TeamSOBITS/zeroconf_avahi_suite
 git clone https://github.com/TeamSOBITS/zeroconf_msgs
-git clone https://github.com/TeamSOBITS/capabilities
-git clone https://github.com/osrf/std_capabilities
 
 # Install ROS dependencies
 sudo apt-get install -y \
