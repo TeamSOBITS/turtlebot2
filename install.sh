@@ -113,7 +113,9 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-joy \
     ros-${ROS_DISTRO}-xacro \
     ros-${ROS_DISTRO}-rqt* \
-    ros-${ROS_DISTRO}-robot-state-publisher
+    ros-${ROS_DISTRO}-robot-state-publisher \
+    ros-${ROS_DISTRO}-joint-state-publisher \
+    ros-${ROS_DISTRO}-openni2-*
 
     
 
