@@ -102,7 +102,6 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-roslint \
     ros-${ROS_DISTRO}-rqt-robot-dashboard \
     ros-${ROS_DISTRO}-kdl-conversions \
-    ros-${ROS_DISTRO}-libusb \
     ros-${ROS_DISTRO}-cv-bridge \
     ros-${ROS_DISTRO}-pcl-* \
     ros-${ROS_DISTRO}-gazebo-ros \
