@@ -17,7 +17,6 @@ sudo apt install -y \
     git \
     libqt4-dev \
     pyqt5-dev-tools \
-    lib
     libavahi-client-dev \
     libavahi-common-dev \
     libusb-dev \
