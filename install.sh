@@ -117,6 +117,12 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-joint-state-publisher \
     ros-${ROS_DISTRO}-openni2-*
 
-    
+
+# Export variables
+echo 'export TURTLEBOT_GAZEBO_WORLD_FILE=$HOME/catkin_ws/src/turtlebot2_on_noetic/turtlebot_simulator/turtlebot_gazebo/worlds/playground.world' >> ~/.bashrc
+echo 'export TURTLEBOT_STAGE_MAP_FILE="$HOME/catkin_ws/src/turtlebot2_on_noetic/turtlebot_simulator/turtlebot_stage/maps/maze.yaml"' >> ~/.bashrc
+echo 'export TURTLEBOT_STAGE_WORLD_FILE="$HOME/catkin_ws/src/turtlebot2_on_noetic/turtlebot_simulator/turtlebot_stage/maps/stage/maze.world"' >> ~/.bashrc
+echo 'export TURTLEBOT_3D_SENSOR="asus_xtion_pro"' >> ~/.bashrc
+
 
 echo "╚══╣ Install: Turtlebot2 for ROS Noetic (FINISHED) ╠══╝"
